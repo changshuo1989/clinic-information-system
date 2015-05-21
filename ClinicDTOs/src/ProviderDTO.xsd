@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://cs548.stevens.edu/clinic/service/web/data/provider"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://cs548.stevens.edu/clinic/service/web/data/provider">
+
+	<element name="provider-dto">
+		<complexType>
+			<sequence>
+				<element name="provider-id" type="long"/>
+				<element name="npi" type="long"/>
+				<element name="name" type="string"/>
+				<element name="provider-type">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="Radiology"></enumeration>
+							<enumeration value="Surgery"></enumeration>
+							<enumeration value="Oncology"></enumeration>
+						</restriction>
+					</simpleType>
+				</element>
+				<element name="treatments" type="long" nillable="true"
+					minOccurs="0" maxOccurs="unbounded" />				
+			</sequence>
+		</complexType>
+	</element>
+
+</schema>

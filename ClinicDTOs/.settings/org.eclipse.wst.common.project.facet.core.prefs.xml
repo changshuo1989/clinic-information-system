@@ -1,0 +1,36 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="libprov">
+      <attribute name="provider-id" value="jaxb-jre-library-provider"/>
+    </node>
+    <node name="platform">
+      <attribute name="platform-id" value="generic_2_1"/>
+    </node>
+    <node name="schemas">
+      <node name="schema-1">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/TreatmentDTO.xsd"/>
+        <attribute name="namespace" value="http://cs548.stevens.edu/clinic/service/web/data/treatment"/>
+      </node>
+      <node name="schema-2">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/PatientDTO.xsd"/>
+        <attribute name="namespace" value="http://cs548.stevens.edu/clinic/service/web/data/patient"/>
+      </node>
+      <node name="schema-3">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/TreatmentDTO.xsd"/>
+        <attribute name="namespace" value="http://www.example.org/clinic/schemas/treatment"/>
+      </node>
+      <node name="schema-4">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/ProviderDTO.xsd"/>
+        <attribute name="namespace" value="http://cs548.stevens.edu/clinic/service/web/data/provider"/>
+      </node>
+      <node name="schema-5">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/PatientDTO.xsd"/>
+        <attribute name="namespace" value="http://www.example.org/clinic/schemas/patient"/>
+      </node>
+      <node name="schema-6">
+        <attribute name="location" value="platform:/resource/ClinicDTOs/src/ProviderDTO.xsd"/>
+        <attribute name="namespace" value="http://www.example.org/clinic/schemas/provider"/>
+      </node>
+    </node>
+  </facet>
+</root>

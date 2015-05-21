@@ -1,0 +1,7 @@
+HTTP/1.1 201 Created
+X-Powered-By: Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2 Java/Oracle Corporation/1.7)
+Server: GlassFish Server Open Source Edition 3.1.2
+Location: http://ec2-54-172-223-23.compute-1.amazonaws.com:8080/ClinicRestWebService/resources/provider/1305
+Content-Length: 0
+Date: Tue, 25 Nov 2014 03:29:59 GMT
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<treatmentRepresentation
+	xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+	<ns2:patient
+		url="http://http://ec2-54-172-223-23.compute-1.amazonaws.com:8080/ClinicRestWebService/resources/patient/1301"
+		relation="http://cs548.stevens.edu/clinic/rest/relations/patient"
+		mediaType="application/xml" />
+		
+	<ns2:provider
+		url="http://http://ec2-54-172-223-23.compute-1.amazonaws.com:8080/ClinicRestWebService/resources/parovider/1302"
+		relation="http://cs548.stevens.edu/clinic/rest/relations/provider"
+		mediaType="application/xml" />
+		
+	<ns2:diagnosis>fracture</ns2:diagnosis>	
+	<ns2:drug-treatment>
+		<ns2:name>Pain Killer</ns2:name>
+		<ns2:dosage>30.0</ns2:dosage>
+	</ns2:drug-treatment>
+	
+</treatmentRepresentation>

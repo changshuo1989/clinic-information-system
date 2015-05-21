@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<patientRepresentation
+	xmlns:ns2="http://cs548.stevens.edu/clinic/service/web/rest/data">
+	<ns2:id>351</ns2:id>
+	<ns2:patient-id>1234</ns2:patient-id>
+	<ns2:name>David</ns2:name>
+	<ns2:dob>1989-01-01Z</ns2:dob>
+	<ns2:age>25</ns2:age>
+	<ns2:treatments
+		url="http://ec2-54-173-10-140.compute-1.amazonaws.com:8080/ClinicRestWebService/resources/treatment/353"
+		relation="http://cs548.stevens.edu/clinic/rest/relations/treatment"
+		mediaType="application/xml" />
+</patientRepresentation>

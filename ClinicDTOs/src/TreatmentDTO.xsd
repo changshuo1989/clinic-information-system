@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://cs548.stevens.edu/clinic/service/web/data/treatment"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.0"
+	elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://cs548.stevens.edu/clinic/service/web/data/treatment"
+	attributeFormDefault="unqualified">
+
+	<annotation>
+		<appinfo>
+			<jaxb:globalBindings>
+				<jaxb:javaType name="java.util.Date" xmlType="date"
+					parseMethod="edu.stevens.cs548.clinic.service.dto.DateAdapter.parseDate"
+					printMethod="edu.stevens.cs548.clinic.service.dto.DateAdapter.printDate" />
+			</jaxb:globalBindings>
+		</appinfo>
+	</annotation>
+	
+	<element name="treatment-dto">
+		<complexType>
+			<sequence>
+				<element name="treatment-id" type="long"></element>
+				<element name="patient-id" type="long"></element>
+				<element name="provider-id" type="long"></element>
+				<element name="diagnosis" type="string"></element>
+				<choice>
+					<element name="drug-treatment" type="tns:DrugTreatmentType"/>
+					<element name="radiology" type="tns:RadiologyType"/>
+					<element name="surgery" type="tns:SurgeryType"/>
+				</choice>
+			</sequence>
+		</complexType>
+	</element>
+	
+	<complexType name="DrugTreatmentType">
+		<sequence>
+			<element name="name" type="string"></element>
+            <element name="physician" type="string"></element>
+            <element name="dosage" type="float"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="RadiologyType">
+		<sequence>
+            <element name="radiologist" type="string"></element>
+            <element name="date" type="date" minOccurs="1"
+				maxOccurs="unbounded">
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="SurgeryType">
+		<sequence>
+            <element name="surgeon" type="string"></element>
+            <element name="date" type="date"></element>
+		</sequence>
+	</complexType>
+</schema>
